@@ -1,0 +1,160 @@
+:root {
+  --border-style: 4px solid black;
+  --gopher-color: #6ad6e3;
+}
+
+.container-gopher {
+  width: 250px;
+  height: 400px;
+  margin: auto;
+  background: var(--gopher-color);
+  border: var(--border-style);
+  border-radius: 100px;
+}
+
+.gopher-ears {
+  width: 250px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ears {
+  width: 50px;
+  height: 50px; 
+  background: var(--gopher-color);
+  border: var(--border-style);
+  border-radius: 50%;
+  display: flex;
+}
+
+.inner-ear  {
+  width: 25px;
+  height: 25px; 
+  background: black;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.gopher-eyes {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(30px) translateX(25px)
+}
+
+.eyes {
+  width: 80px;
+  height: 73px;
+  border: var(--border-style);
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+}
+
+.pupil {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: black;
+  transform: translateX(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eye-glow {
+  width: 8px;
+  height: 8px;
+  background: #FFF;
+  border-radius: 50%;
+  transform: translate(5px, 5px);
+}
+
+.gopher-snout {
+  height: 36px;
+  display: grid;
+  justify-content: center;
+  transform: translateY(25px);
+}
+
+.gopher-lip {
+  width: 50px;
+  height: 30px;
+  border-radius: 48%;
+  border: var(--border-style);
+  background: #f4d2a0;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+}
+
+.gopher-nose {
+  width: 34px;
+  height: 22px;
+  border-radius: 50%;
+  background: black;
+  transform: translateY(-8px)
+}
+
+.gopher-teeth {
+  display: flex;
+  justify-content: center;  
+  transform: translateY(-12px);
+}
+
+.gopher-tooth {
+  width: 10px;
+  height: 20px;
+  border: var(--border-style);
+  background: #FFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.superior-paws {
+  width: 310px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-31px, 40px);
+}
+
+.inferior-paws {
+  width: 256px;
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(-4px, 220px);
+}
+
+.paws {
+  width: 30px;
+  height: 60px;
+  border-radius: 38%;
+  border: var(--border-style);
+  background: #f4d2a0;
+  display: flex;
+  justify-content: center;
+}
+
+.left-paws {
+  transform: rotate(45deg);
+}
+
+.right-paws {
+  transform: rotate(315deg);
+}
+
+.claw {
+  width: 4px;
+  height: 12px;
+  background: #000;
+  align-self: flex-end;
+}
